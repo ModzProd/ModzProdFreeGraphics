@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ModzProd</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,900&subset=latin,cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese&display=swap" rel="stylesheet">
+<link href="modzprodFreeGraphicsBasewebsite.css" rel="stylesheet">
+<link href="pws1.css" rel="stylesheet">
+<!-- Insert Google Analytics code here -->
+</head>
+<body>
+<div id="PageHeader1" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:113px;z-index:-1;">
+</div>
+<div id="FlexGrid1">
+<div class="header">
+</div>
+<div class="main">
+<div id="wb_PhotoGallery1" style="display:block;width:100%;z-index:0;">
+<div id="PhotoGallery1">
+<div class="thumbnails">
+<?php
+   $images_folder = "people/";
+   $html = "";
+   $images = array();
+   $dir = opendir($images_folder);
+   while ($filename = readdir($dir))
+   {
+      $ext = pathinfo($filename, PATHINFO_EXTENSION);
+      $ext = strtolower($ext);
+      if ($ext == 'gif' || $ext == 'jpeg' || $ext == 'jpg' || $ext == 'png' || $ext == 'webp')
+      {
+         $images[] = $filename;
+      }
+   }
+   closedir($dir);
+   sort($images);
+   $images = array_slice($images, 0, 1);
+   $count = 0;
+   foreach($images as $filename)
+   {
+      $count++;
+      $exif = exif_read_data($images_folder.$filename);
+      $title = trim(isset($exif['ImageDescription']) ? $exif['ImageDescription'] : '');
+      $html .= "<div class=\"thumbnail\"><a href=\"$images_folder$filename\"><img alt=\"$title\" id=\"PhotoGallery1_img$count\" src=\"$images_folder$filename\" title=\"$title\" loading=\"lazy\"></a></div>\r\n";
+      if ($count % 1 == 0)
+      {
+         $html .= "<div class=\"clearfix visible-col1\"></div>";
+      }
+   }
+   echo $html;
+?>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+</div>
+</div>
+<img src="images/img0003.png" id="MergedObject3" alt="" title="" style="border-width:0;position:absolute;left:0px;top:1599px;width:1366px;height:164px;z-index:3" width="1366" height="164">
+<img src="images/img0002.png" id="MergedObject2" alt="" title="" style="border-width:0;position:absolute;left:0px;top:0px;width:1366px;height:113px;z-index:4" width="1366" height="113">
+<div id="PageFooter1" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:1819px;width:100%;height:1px;z-index:5;">
+</div>
+</body>
+</html>
