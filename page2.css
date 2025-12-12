@@ -1,0 +1,297 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+.visibility-hidden
+{
+   visibility: hidden;
+}
+#FlexGrid1
+{
+   display: grid;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-size: 0;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 100px auto 100px;
+   grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "footer footer footer footer";
+}
+#FlexGrid1 .header
+{
+   display: flex;
+   grid-area: header;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+}
+#FlexGrid1 .main
+{
+   display: flex;
+   grid-area: main;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: center;
+}
+#FlexGrid1 .footer
+{
+   display: flex;
+   grid-area: footer;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+#wb_Picture1
+{
+   height: 100%;
+   margin: 0;
+   vertical-align: top;
+}
+#Picture1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   object-fit: contain;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text1 div
+{
+   text-align: right;
+}
+#MergedObject2
+{
+   border-width: 0;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 1366px;
+   height: 113px;
+   z-index: 2;
+}
+#MergedObject1
+{
+   border-width: 0;
+   position: absolute;
+   left: 0px;
+   top: 549px;
+   width: 1366px;
+   height: 164px;
+   visibility: hidden;
+   z-index: 3;
+}
+#wb_Picture1
+{
+   display: block;
+   width: 100%;
+   height: auto;
+   z-index: 0;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 1147px;
+   top: 873px;
+   width: 384px;
+   height: 18px;
+   text-align: right;
+   z-index: 5;
+}
+#MergedObject3
+{
+   border-width: 0;
+   position: absolute;
+   left: 0px;
+   top: 545px;
+   width: 1366px;
+   height: 164px;
+   z-index: 4;
+}
+@media only screen
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#FlexGrid1
+{
+   visibility: visible;
+   display: grid;
+}
+#FlexGrid1
+{
+   height: auto;
+}
+#FlexGrid1
+{
+   margin: 0;
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 125px auto 100px;
+   grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
+}
+#FlexGrid1 .header
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+}
+#FlexGrid1 ..
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: flex-start;
+   align-content: flex-start;
+}
+#FlexGrid1 .main
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: center;
+}
+#FlexGrid1 .footer
+{
+   display: flex;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   padding: 0;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+#MergedObject2
+{
+   left: 0px;
+   top: 0px;
+   width: 1366px;
+   height: 113px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Picture1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#Picture1
+{
+   margin-left: auto;
+   margin-right: auto;
+}
+#MergedObject1
+{
+   left: 0px;
+   top: 549px;
+   width: 1366px;
+   height: 164px;
+   visibility: hidden;
+   display: none;
+}
+#MergedObject3
+{
+   left: 0px;
+   top: 545px;
+   width: 1366px;
+   height: 164px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 1147px;
+   top: 873px;
+   width: 384px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+}
