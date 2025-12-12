@@ -20,37 +20,10 @@
 <div id="wb_PhotoGallery1" style="display:block;width:100%;z-index:0;">
 <div id="PhotoGallery1">
 <div class="thumbnails">
-<?php
-   $images_folder = "people/";
-   $html = "";
-   $images = array();
-   $dir = opendir($images_folder);
-   while ($filename = readdir($dir))
-   {
-      $ext = pathinfo($filename, PATHINFO_EXTENSION);
-      $ext = strtolower($ext);
-      if ($ext == 'gif' || $ext == 'jpeg' || $ext == 'jpg' || $ext == 'png' || $ext == 'webp')
-      {
-         $images[] = $filename;
-      }
-   }
-   closedir($dir);
-   sort($images);
-   $images = array_slice($images, 0, 1);
-   $count = 0;
-   foreach($images as $filename)
-   {
-      $count++;
-      $exif = exif_read_data($images_folder.$filename);
-      $title = trim(isset($exif['ImageDescription']) ? $exif['ImageDescription'] : '');
-      $html .= "<div class=\"thumbnail\"><a href=\"$images_folder$filename\"><img alt=\"$title\" id=\"PhotoGallery1_img$count\" src=\"$images_folder$filename\" title=\"$title\" loading=\"lazy\"></a></div>\r\n";
-      if ($count % 1 == 0)
-      {
-         $html .= "<div class=\"clearfix visible-col1\"></div>";
-      }
-   }
-   echo $html;
-?>
+<div class="thumbnail">
+<a href="images/MPFGWorkersFemale000.jpg"><img alt="" id="PhotoGallery1_img0" src="images/tn_MPFGWorkersFemale000.jpg" loading="lazy" class="image" title="MPFGWorkersFemale000" width="1294" height="1941"></a>
+</div>
+<div class="clearfix visible-col1"></div>
 </div>
 </div>
 </div>
@@ -60,7 +33,7 @@
 </div>
 <img src="images/img0003.png" id="MergedObject3" alt="" title="" style="border-width:0;position:absolute;left:0px;top:1599px;width:1366px;height:164px;z-index:3" width="1366" height="164">
 <img src="images/img0002.png" id="MergedObject2" alt="" title="" style="border-width:0;position:absolute;left:0px;top:0px;width:1366px;height:113px;z-index:4" width="1366" height="113">
-<div id="PageFooter1" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:1819px;width:100%;height:1px;z-index:5;">
+<div id="PageFooter1" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:2265px;width:100%;height:1px;z-index:5;">
 </div>
 </body>
 </html>

@@ -107,10 +107,6 @@ body
 #PhotoGallery1 .thumbnail img
 {
    border: 0px solid #DEE2E6;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 100%;
    box-sizing: border-box;
    border-radius: 0px;
 }
@@ -127,9 +123,14 @@ body
 {
    clear: both;
 }
-#PhotoGallery1 .visible-col3
+#PhotoGallery1 .visible-col5
 {
    display: none;
+}
+#PhotoGallery1_img0
+{
+   width: 120px;
+   height: 120px;
 }
 #PageFooter1
 {
