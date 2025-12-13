@@ -14,9 +14,7 @@ function SearchDatabase()
 {
    database_length = 0;
    this[database_length++] = new SearchPage("page2.html", "Untitled Page", "All Rights Reserveds 2025   ", "");
-   this[database_length++] = new SearchPage("page1.html", "Untitled Page", "All Rights Reserveds 2025   ", "");
-   this[database_length++] = new SearchPage("index.html", "Home", " ", "");
-   this[database_length++] = new SearchPage("pws.html", "ModzProd", "EXPANSIONS DLC'S  ", "");
-   this[database_length++] = new SearchPage("pws1.html", "ModzProd", " ", "");
+   this[database_length++] = new SearchPage("index.html", "Untitled Page", "All Rights Reserveds 2025   ", "");
+   this[database_length++] = new SearchPage("pws1.html", "ModzProd - PWS FreeGraphic Library", " ", "");
    return this;
 }

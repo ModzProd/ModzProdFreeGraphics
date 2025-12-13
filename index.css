@@ -2,591 +2,229 @@ body
 {
    background-color: #FFFFFF;
    color: #000000;
-   font-family: Arial;
-   font-weight: normal;
+   font-family: "Noto Sans";
+   font-weight: 400;
+   font-weight: 400;
    font-size: 16px;
    line-height: 1.1875;
    margin: 0;
    padding: 0;
 }
-#wb_SlideShow1
+#Picture1
 {
-   min-height: 20px;
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #E3E3E3;
+   border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
+   padding: 0;
+   object-fit: scale-down;
+   left: 0;
+   top: 0;
    width: 100%;
-   table-layout: fixed;
-   display: table;
-   margin: 0;
-}
-#SlideShow1
-{
-   padding: 30px 40px 30px 40px;
-   position: relative;
-   margin: 0;
-   line-height: 1;
    height: 100%;
-   box-sizing: border-box;
 }
-#SlideShow1 .carousel-inner
-{
-   overflow: hidden;
-   width: 100%;
-   position: relative;
-}
-#SlideShow1 .carousel-inner > .carousel-item
-{
-   display: none;
-   position: relative;
-   transition: 0.6s ease-in-out left;
-}
-#SlideShow1 .carousel-inner > .carousel-item > img, #SlideShow1 .carousel-inner > .carousel-item > a > img
-{
-   display: block;
-   line-height: 1;
-}
-#SlideShow1 .carousel-inner > .active, #SlideShow1 .carousel-inner > .carousel-item-next, #SlideShow1 .carousel-inner > .carousel-item-prev
-{
-   display: block;
-}
-#SlideShow1 .carousel-inner > .active
-{
-   left: 0;
-}
-#SlideShow1 .carousel-inner > .carousel-item-next, #SlideShow1 .carousel-inner > .carousel-item-prev
-{
-   position: absolute;
-   top: 0;
-   width: 100%;
-}
-#SlideShow1 .carousel-inner > .carousel-item-next
-{
-   left: 100%;
-}
-#SlideShow1 .carousel-inner > .carousel-item-prev
-{
-   left: -100%;
-}
-#SlideShow1 .carousel-inner > .carousel-item-next.carousel-item-start, #SlideShow1 .carousel-inner > .carousel-item-prev.carousel-item-end
-{
-   left: 0;
-}
-#SlideShow1 .carousel-inner > .active.carousel-item-start
-{
-   left: -100%;
-}
-#SlideShow1 .carousel-inner > .active.carousel-item-end
-{
-   left: 100%;
-}
-#SlideShow1 .thumbnails
-{
-   margin: 0;
-   padding: 0;
-   width: 100%;
-}
-#SlideShow1 .thumbnail
-{
-   position: relative;
-   min-height: 1px;
-   box-sizing: border-box;
-   float: left;
-   text-align: center;
-   vertical-align: top;
-   padding-right: 1px;
-   width: 33.33333333%;
-}
-#SlideShow1 .thumbnail img
-{
-   max-width: 100%;
-   width: 100%;
-   height: auto;
-   vertical-align: middle;
-   box-sizing: border-box;
-   border: 0px solid #DEE2E6;
-   border-radius: 0px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-#MenuBar1
+#wb_Text1 
 {
    background-color: transparent;
-   border: 0px solid #000000;
-   border-radius: 8px;
-}
-.MenuBar1SubMenu
-{
-   background-color: transparent;
-   border: 1px solid #000000;
-   position:	absolute;
-   visibility: hidden;
-   overflow: visible;
-   z-index: 100;
-}
-.MenuBar1SubMenuTable
-{
-   cursor: default;
-   border: 0;
-   padding: 0;
-}
-.MenuBar1SubMenuTable tr
-{
-   margin: 0;
-   padding: 0;
-}
-.MenuBar1Menu
-{
-   background-color: transparent;
-   margin: 0px 0 0px 0px;
-   padding: 0;
-}
-.MenuBar1MenuOuter
-{
-   background-color: transparent;
-   border: 0px solid #000000;
-}
-.MenuBar1Menu tr
-{
-   margin: 0;
-   padding: 0;
-}
-.MenuBar1MainItem .MenuBar1MainItemLeft,
-.MenuBar1MainItem .MenuBar1MainFolderLeft
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   text-align: center;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MainItem .MenuBar1MainItemText, 
-.MenuBar1MainItem .MenuBar1MainItemText a,
-.MenuBar1MainItem .MenuBar1MainFolderText,
-.MenuBar1MainItem .MenuBar1MainFolderText a
-{
-   background-color: #000000;
-   color: #D3D3D3;
-   font-size: 27px;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   line-height: 32px;
-   text-align: left;
-   text-decoration: none;
-   text-transform: none;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #000000;
-   border-right: 0px solid #000000;
-   border-top: 0px solid #000000;
-   border-left: 0px solid #000000;
-   padding: 3px 5px 3px 5px;
-   vertical-align: middle;
-}
-.MenuBar1MainItem .MenuBar1MainItemRight,
-.MenuBar1MainItem .MenuBar1MainFolderRight
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MainItemHover .MenuBar1MainItemLeft,
-.MenuBar1MainItemActive .MenuBar1MainItemLeft,
-.MenuBar1MainItemHover .MenuBar1MainFolderLeft,
-.MenuBar1MainItemActive .MenuBar1MainFolderLeft
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MainItemHover .MenuBar1MainItemText,
-.MenuBar1MainItemActive .MenuBar1MainItemText,
-.MenuBar1MainItemHover .MenuBar1MainItemText a,
-.MenuBar1MainItemActive .MenuBar1MainItemText a,
-.MenuBar1MainItemHover .MenuBar1MainFolderText,
-.MenuBar1MainItemActive .MenuBar1MainFolderText,
-.MenuBar1MainItemHover .MenuBar1MainFolderText a,
-.MenuBar1MainItemActive .MenuBar1MainFolderText a
-{
-   background-color: #4B0082;
-   color: #7CFC00;
-   font-size: 27px;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   line-height: 32px;
-   text-align: left;
-   text-decoration: none;
-   text-transform: none;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #4B0082;
-   border-right: 0px solid #4B0082;
-   border-top: 0px solid #4B0082;
-   border-left: 0px solid #4B0082;
-   padding: 3px 5px 3px 5px;
-   vertical-align: middle;
-}
-.MenuBar1MainItemHover .MenuBar1MainItemRight,
-.MenuBar1MainItemActive .MenuBar1MainItemRight,
-.MenuBar1MainItemHover .MenuBar1MainFolderRight,
-.MenuBar1MainItemActive .MenuBar1MainFolderRight
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItem .MenuBar1MenuItemLeft,
-.MenuBar1MenuItem .MenuBar1MenuFolderLeft
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   text-align: center;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItem .MenuBar1MenuItemText, 
-.MenuBar1MenuItem .MenuBar1MenuItemText a,
-.MenuBar1MenuItem .MenuBar1MenuFolderText,
-.MenuBar1MenuItem .MenuBar1MenuFolderText a
-{
-   background-color: #4B0082;
-   color: #7CFC00;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   text-align: left;
-   text-decoration: none;
-   text-transform: none;
-   line-height: 16px;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #4B0082;
-   border-top: 0px solid #4B0082;
-   border-right: 0px solid #4B0082;
-   border-left: 0px solid #4B0082;
-   padding: 3px 5px 3px 5px;
-   vertical-align: middle;
-}
-.MenuBar1MenuItem .MenuBar1MenuItemRight,
-.MenuBar1MenuItem .MenuBar1MenuFolderRight
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuItemLeft, 
-.MenuBar1MenuItemActive .MenuBar1MenuItemLeft,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderLeft,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderLeft
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuItemText,
-.MenuBar1MenuItemActive .MenuBar1MenuItemText,
-.MenuBar1MenuItemHover .MenuBar1MenuItemText a,
-.MenuBar1MenuItemActive .MenuBar1MenuItemText a,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderText,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderText,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderText a,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderText a
-{
-   background-color: #800080;
-   color: #7CFC00;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
-   line-height: 16px;
-   text-align: left;
-   text-decoration: none;
-   text-transform: none;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #4B0082;
-   border-top: 0px solid #4B0082;
-   border-right: 0px solid #4B0082;
-   border-left: 0px solid #4B0082;
-   padding: 3px 5px 3px 5px;
-   vertical-align: middle;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuItemRight,
-.MenuBar1MenuItemActive .MenuBar1MenuItemRight,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderRight,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderRight
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1SubMenu td,
-.MenuBar1Menu td,
-.MenuBar1Menu tr
-{
-   vertical-align: middle;
-}
-.MenuBar1MainItem .firstChild,
-.MenuBar1MainItemHover .firstChild
-{
-   border-top-left-radius: 8px;
-   border-bottom-left-radius: 8px;
-}
-.MenuBar1MainItem .lastChild,
-.MenuBar1MainItemHover .lastChild
-{
-   border-top-right-radius: 8px;
-   border-bottom-right-radius: 8px;
-}
-.MenuBar1MenuSplitText div
-{
-   height: 1px;
-   padding: 0;
-   background-color: #FFFFFF;
-   overflow: hidden;
-}
-.MenuBar1MenuItem .MenuBar1MenuSplitLeft
-{
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MenuItem .MenuBar1MenuSplitText
-{
-   background-color: #4B0082;
-   height: 7px;
-   padding: 0 6px 0 6px;
-}
-.MenuBar1MenuItem .MenuBar1MenuSplitRight
-{
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MainSplitText div
-{
-   background-color: #FFFFFF;
-   height: 1px;
-   padding: 0;
-   overflow: hidden;
-}
-.MenuBar1MainItem .MenuBar1MainSplitLeft 
-{
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MainItem .MenuBar1MainSplitText
-{
-   background-color: #000000;
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MainItem .MenuBar1MainSplitRight
-{
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MainItem
-{
-   vertical-align: middle;
-}
-.MenuBar1HorizontalSplit
-{
-   border-right: 0 solid #8080FF;
-   border-left: 0 solid #8080FF;
-   width: 15px;
-   background-color: #000000;
-   padding: 3px 0 3px 0;
-   vertical-align: middle;
-   text-align: center;
-   text-decoration: none;
-   color: #FFFFFF;
-   font-size: 27px;
-   font-family: Arial;
-   font-style: normal;
-}
-.MenuBar1MainItem, .MenuBar1MainItemHover, .MenuBar1MainItemActive,
-.MenuBar1MenuItem, .MenuBar1MenuItemHover, .MenuBar1MenuItemActive
-{
-   white-space: nowrap;
-}
-.MenuBar1SpacerDiv
-{
-   background: transparent;
-   margin: 0;
-   padding: 0;
-   border: 0;
-   font-size: 1px;
-}
-#wb_MenuBar1
-{
-}
-#wb_MenuBar1:hover
-{
-   z-index: 1111 !important;
-}
-#wb_OverlayMenu1
-{
-   margin: 0;
-}
-#OverlayMenu1
-{
-   background-color: rgba(219,219,219,0.00);
    background-image: none;
-   border: 0px solid #0D6EFD;
+   border: 0px solid #000000;
    border-radius: 0px;
-   cursor: pointer;
-   user-select: none;
-}
-#OverlayMenu1:hover
-{
-   background-color: rgba(11,94,215,0.00);
-   background-image: none;
-   border-color: #0A58CA;
-}
-#OverlayMenu1
-{
-   display: block;
-   width: 131px;
-   height: 102px;
-   position: absolute;
-   overflow: hidden;
-}
-#OverlayMenu1 .line
-{
-   width: 1px;
-   height: 0px;
-   background: #FFFFFF;
-   display: block;
-   margin: 0px auto;
-   transition: all 500ms linear;
-}
-#OverlayMenu1 .line:first-child
-{
-   margin-top: 50px;
-}
-#OverlayMenu1-overlay
-{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   left: 0;
-   overflow-y: auto;
-   overflow: hidden;
-   position: absolute;
-   top: 0;
-   width: 400px;
-   z-index: 9998 !important;
-   background-color: #000000;
-}
-#OverlayMenu1-overlay ul
-{
-   font-family: "Noto Sans";
-   font-weight: normal;
-   font-style: normal;
-   font-size: 19px;
-   text-decoration: none;
-   text-transform: none;
-   list-style: none;
+   padding: 0;
    margin: 0;
-   padding: 0;
+   text-align: right;
 }
-.OverlayMenu1
+#wb_Text1 div
 {
-   width: 100%;
-   max-width: 300px;
+   text-align: right;
 }
-.OverlayMenu1 a
+#MergedObject2
 {
-   text-decoration: none;
+   border-width: 0;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 1366px;
+   height: 113px;
+   z-index: 2;
 }
-.OverlayMenu1 ul
+#MergedObject1
 {
-   list-style: none;
-   padding: 0;
-   text-align: left;
+   border-width: 0;
+   position: absolute;
+   left: 0px;
+   top: 502px;
+   width: 1366px;
+   height: 164px;
+   z-index: 1;
 }
-.OverlayMenu1 li
+#wb_Picture1
 {
-   position: relative;
+   position: absolute;
+   left: 192px;
+   top: 154px;
+   width: 586px;
+   height: 358px;
+   z-index: 0;
 }
-.OverlayMenu1 li a
+#wb_Text1
 {
-   display: block;
-   position: relative;
-   padding: 10px 15px 10px 15px;
-   color: #FFFFFF;
-   outline: none;
+   position: absolute;
+   left: 586px;
+   top: 613px;
+   width: 384px;
+   height: 18px;
+   text-align: right;
+   z-index: 3;
 }
-.OverlayMenu1 li a:hover
+@media only screen and (min-width: 1366px)
 {
-   color: #000000;
+body
+{
    background-color: #FFFFFF;
+   background-image: none;
 }
-#OverlayMenu1-overlay
+#wb_Picture1
 {
-   visibility: hidden;
-   width: 0;
-   transition: width 400ms 0.3s, visibility 0s 700ms;
-}
-#OverlayMenu1-overlay.show
-{
+   left: 390px;
+   top: 158px;
+   width: 586px;
+   height: 358px;
    visibility: visible;
-   width: 400px;
-   transition: width 400ms;
+   display: inline;
+   margin: 0;
+   padding: 0;
 }
-#OverlayMenu1-overlay .OverlayMenu1
+#MergedObject1
 {
-   opacity: 0;
-   transition: opacity 0.3s 400ms;
+   left: 0px;
+   top: 502px;
+   width: 1366px;
+   height: 164px;
+   visibility: visible;
+   display: inline;
 }
-#OverlayMenu1-overlay.show .OverlayMenu1
+#MergedObject2
 {
-   opacity: 1;
-   transition-delay: 400ms;
+   left: 0px;
+   top: 0px;
+   width: 1366px;
+   height: 113px;
+   visibility: visible;
+   display: inline;
 }
-#OverlayMenu1-overlay.hide .OverlayMenu1
+#wb_Text1
 {
-   transition-delay: 0s;
+   left: 586px;
+   top: 613px;
+   width: 384px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
 }
-#OverlayMenu1-overlay .overlay-icon
+#wb_Text1
 {
-   margin: 0 10px 0 0 ;
+   margin: 0;
+   padding: 0;
 }
-.OverlayMenu1 i
-{
-   position: relative;
-   left: 0;
-   top: 0;
-   display: inline-block;
-   font-family: "Material Icons";
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
 }
-.OverlayMenu1-effect
+@media only screen and (min-width: 768px) and (max-width: 1365px)
 {
-   transition: all 500ms linear;
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Picture1
+{
+   left: 91px;
+   top: 128px;
+   width: 586px;
+   height: 358px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#MergedObject1
+{
+   left: 0px;
+   top: 502px;
+   width: 1366px;
+   height: 164px;
+   visibility: visible;
+   display: inline;
+}
+#MergedObject2
+{
+   left: 0px;
+   top: 0px;
+   width: 1366px;
+   height: 113px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 586px;
+   top: 613px;
+   width: 384px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+}
+@media only screen and (max-width: 767px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Picture1
+{
+   left: 192px;
+   top: 48px;
+   width: 586px;
+   height: 358px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#MergedObject1
+{
+   left: 0px;
+   top: 502px;
+   width: 1366px;
+   height: 164px;
+   visibility: visible;
+   display: inline;
+}
+#MergedObject2
+{
+   left: 0px;
+   top: 0px;
+   width: 1366px;
+   height: 113px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 586px;
+   top: 613px;
+   width: 384px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
 }
